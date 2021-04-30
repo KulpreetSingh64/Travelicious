@@ -1,0 +1,81 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/stylesheets/login.css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet')
+  link(href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel='stylesheet' type='text/css' href='icons/fontIcons/homePackagesIcon/flaticon.css')
+  title Travelicious | Log In / Sign Up
+header
+  nav.main-nav
+    .row.nav-wrapper
+      .logo-container
+        p.nav-logo Travelicious
+      .nav-links
+        li.nav-link
+          a(href='/') Home
+        li.nav-link
+          a(href='/booking') Booking
+        li.nav-link
+          a(href='#') Blog
+        li.nav-link
+          a(href='/about') About Us
+        li.nav-link
+          a(href='/login') Sign in
+section.login
+  .login__container
+    h2.login__heading Log In
+    form.login__form(action='/signin' method='POST')
+      input.username(type='text' name='username' placeholder='username')
+      input.password(type='password' name='password' placeholder='Password')
+      input.login__submit(type='submit' value='Log In')
+      p.switch-user-type
+        | Not a member? 
+        span(onclick='switchLogin()') Sign Up
+  .login__img
+section.signup
+  .signup__img
+  .signup__container
+    h2.signup__heading Sign Up
+    form.signup__form(action='/signup' method='POST')
+      input.firstname(type='text' name='firstname' placeholder='First Name')
+      input.lastname(type='text' name='lastname' placeholder='Last Name')
+      input.phonenumber(type='tel' name='phonenumber' placeholder='647-864-7816')
+      input.email(type='email' name='email' placeholder='Email')
+      input.username(type='text' name='username' placeholder='username')
+      input.password(type='password' name='password' placeholder='Password')
+      input.signup__submit(type='submit' value='Sign Up')
+      p.switch-user-type
+        | Already a member? 
+        span(onclick='switchSignup()') Log In
+// -------------------------------FOOTER SECTION-------------------------------
+footer
+  .row
+    .footer-bottom
+      .footer-bottom-item
+        p.copyright Copyright &copy; 2021 All Rights Reserved
+      .footer-bottom-item
+        ul.footer-nav-links
+          li
+            a(href='# ') Home
+          li
+            a(href='# ') Blog
+          li
+            a(href='# ') About Us
+          li
+            a(href='# ') Contact Us
+    .footer-credits
+      p.made-by-text
+        | Made with 
+        i.ion-md-heart.heart-icon
+        |  in 
+        i.fab.fa-canadian-maple-leaf.maple-leaf-icon
+        |  Toronto, Canada by Harshit Behl &amp; Kulpreet Singh
+script(src='https://unpkg.com/ionicons@5.0.0/dist/ionicons.js')
+script(src='/javascripts/login.js')

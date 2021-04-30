@@ -1,0 +1,346 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='stylesheets/style.css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet')
+  link(href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel='stylesheet' type='text/css' href='icons/fontIcons/homePackagesIcon/flaticon.css')
+  // <link rel="stylesheet" href="css/homeResponsive.css">
+  title Travelicious
+header
+  .header-overlay
+  nav.main-nav
+    .row.nav-wrapper
+      .logo-container
+        p.nav-logo Travelicious
+      input#hamburgerMenu(type='checkbox' name='hamburgerMenu')
+      label.hamburger-btn(for='hamburgerMenu')
+        ion-icon(name='reorder-three-outline')
+      .nav-links
+        li.nav-link
+          a(href='/') Home
+        li.nav-link
+          a(href='/booking') Bookings
+        li.nav-link
+          a(href='#') Blog
+        li.nav-link
+          a(href='/about') About Us
+        li.nav-link
+          a(href='/login') Sign in
+  .row
+    .showcase
+      .showcase-text-top
+        .text-lines
+        p Luxury Tours &amp; Travels
+        .text-lines
+      h1 Welcome To Travelicious
+      p.showcase-paragraph Discover hidden wonders on travels curated by Travelicious
+      a.showcase-btn(href='login.html') Get Started
+// -------------------------------DESTINATION SECTION-------------------------------
+section.destination-section
+  .row
+    h2 Top Destinations
+    .destination-grid-container
+      .destination-grid-item
+        img(src='images/destinationImage1.jpg' alt="Europe's Image")
+        .destination-overlay
+          p.destination-country Europe
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.
+          a.btn-white(href='#') View Destination
+      .destination-grid-item
+        img(src='images/destinationImage2.jpg' alt="Thailand's Image")
+        .destination-overlay
+          p.destination-country Thailandia
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.
+          a.btn-white(href='#') View Destination
+      .destination-grid-item
+        img(src='images/destinationImage3.jpg' alt="Japan's Image")
+        .destination-overlay
+          p.destination-country Asia
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.
+          a.btn-white(href='#') View Destination
+      .destination-grid-item
+        img(src='images/destinationImage4.jpg' alt="Scandinavia's Image")
+        .destination-overlay
+          p.destination-country Scandinavia
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.
+          a.btn-white(href='#') View Destination
+      .destination-grid-item
+        img(src='images/destinationImage5.jpg' alt="India's Image")
+        .destination-overlay
+          p.destination-country India
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.
+          a.btn-white(href='#') View Destination
+      .destination-grid-item
+        img(src='images/destinationImage6.jpg' alt="America's Image")
+        .destination-overlay
+          p.destination-country United States
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.
+          a.btn-white(href='#') View Destination
+// -------------------------------VIDEO SECTION-------------------------------
+section.video-section
+  .video-container
+    video(src='videos/homeVideo.mp4' autoplay='true' loop='true')
+  .video-overlay
+  .video-text-container
+    p.video-text
+      | Your 
+      br
+      |                 Next 
+      span Holiday
+  .video-button-container
+    a.video-button(href='#') View All Packages
+// -------------------------------ROOMS SECTION-------------------------------
+section.rooms-section
+  .row
+    .rooms-heading
+      h2 Our Rooms
+      h3 Check Out Our Spacious Rooms
+  .rooms-images
+    .rooms-image-container
+      img.rooms-image(src='images/singleRoom.jpg' alt='Hotel Single Room')
+    .rooms-image-container
+      img.rooms-image(src='images/doubleRoom.jpg' alt='Hotel Double Room')
+    .rooms-image-container
+      img.rooms-image(src='images/luxuryRoom.jpg' alt='Hotel Luxury Room')
+// -------------------------------ARTICLES SECTION-------------------------------
+section.articles-section
+  .row
+    h2 Articles &amp; News
+    .articles-grid-container
+      .articles-grid-item
+        .articles-image-container
+          img(src='images/articlesImage1.jpg' alt='Eiffel Tower Image')
+        .articles-text-container
+          p Our News
+          h4 Travel Events
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.
+          a.btn-purple(href='#') Read More
+      .articles-grid-item
+        .articles-image-container
+          img(src='images/articlesImage2.jpg' alt='Travelling Guy')
+        .articles-text-container
+          p Travel Tips
+          h4 New Routes
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.
+          a.btn-white(href='#') Read More
+      .articles-grid-item
+        .articles-text-container
+          p Our News
+          h4 Best Beaches
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.
+          a.btn-white(href='#') Read More
+        .articles-image-container
+          img(src='images/articlesImage3.jpg' alt='Girl on Beach')
+      .articles-grid-item
+        .articles-text-container
+          p Travel Tips
+          h4 Love Travel
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.
+          a.btn-red(href='#') Read More
+        .articles-image-container
+          img(src='images/articlesImage4.jpg' alt='Travelling Guy')
+// -------------------------------DISCOVER SECTION-------------------------------
+section.discover-section
+  div
+    img(src='images/discoverImage1.jpg' alt='City Image')
+    p.discover-text Discover Cities
+    a.btn-white(href='#') Details
+  div
+    img(src='images/discoverImage2.jpg' alt='Nature Image')
+    p.disover-text Discover Nature
+    a.btn-white(href='#') Details
+  .discover-overlay
+// -------------------------------PACKAGES SECTION-------------------------------
+section.packages-section
+  .row
+    h2 Our Packages
+    .packages-container
+      .packages-item
+        .packages-image-container
+          img(src='images/packagesImage1.jpg' alt="Berlin's Image")
+        .packages-text-container
+          i.flaticon-arc-de-triomphe.landmark-icon.landmark-icon-yellow
+          h3 Berlin
+          p
+            ion-icon.packages-location-icon(name='location-outline')
+            | Europe
+          hr
+          .prices-container
+            p
+              | Cultural 
+              br
+              |                                 Relax
+            p 500 $
+          hr
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore corrupti nam natus ratione non
+          a.btn-yellow(href='#') Details
+      .packages-item
+        .packages-image-container
+          img(src='images/packagesImage2.jpg' alt="Japan's Image")
+        .packages-text-container
+          i.flaticon-japan-architecture-shape.landmark-icon.landmark-icon-red
+          h3 Japan
+          p
+            ion-icon.packages-location-icon(name='location-outline')
+            | Asia
+          hr
+          .prices-container
+            p
+              | History 
+              br
+              |                                 Cultural
+            p 700 $
+          hr
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore corrupti nam natus ratione non
+          a.btn-red(href='#') Details
+      .packages-item
+        .packages-image-container
+          img(src='images/packagesImage3.jpg' alt="San Francisco's Image")
+        .packages-text-container
+          i.flaticon-statue-of-liberty.landmark-icon.landmark-icon-purple
+          h3 San Francisco
+          p
+            ion-icon.packages-location-icon(name='location-outline')
+            | United States
+          hr
+          .prices-container
+            p
+              | Sport 
+              br
+              |                                 Relax
+            p 400 $
+          hr
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore corrupti nam natus ratione non
+          a.btn-purple(href='#') Details
+// -----------------------------TESTIMONIALS SECTION-----------------------------
+section#testimonials.testimonials-section
+  .row
+    .testimonials-heading
+      h2 Testimonials
+      h3 What Our Guests Are Saying About Us
+    .testimonials-container
+      .testimonial
+        .testimonial-top
+          span.upper-quotes &ldquo;
+          p.testimonial-paragraph
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            | Sint voluptatibus et quod sequi nemo, eum, repudiandae veniam repellat, dolore
+            | error vel deleniti libero.
+          span.lower-quotes &bdquo;
+        .testimonial-bottom
+          img.user-image(src='images/userImage1.jpg' alt='User Image')
+          p.user-names Katheryn Wolf
+          p.user-rating &starf;&starf;&starf;&starf;&star;
+      .testimonial
+        .testimonial-top
+          span.upper-quotes &ldquo;
+          p.testimonial-paragraph
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            | Sint voluptatibus et quod sequi nemo, eum, repudiandae veniam repellat, dolore
+            | error vel deleniti libero.
+          span.lower-quotes &bdquo;
+        .testimonial-bottom
+          img.user-image(src='images/userImage2.jpg' alt='User Image')
+          p.user-names Nick Fury
+          p.user-rating &starf;&starf;&starf;&starf;&starf;
+      .testimonial
+        .testimonial-top
+          span.upper-quotes &ldquo;
+          p.testimonial-paragraph
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            | Sint voluptatibus et quod sequi nemo, eum, repudiandae veniam repellat, dolore
+            | error vel deleniti libero.
+          span.lower-quotes &bdquo;
+        .testimonial-bottom
+          img.user-image(src='images/userImage3.jpg' alt='User Image')
+          p.user-names Angela Woods
+          p.user-rating &starf;&starf;&starf;&starf;&star;
+// -------------------------------FOOTER SECTION-------------------------------
+footer
+  .row
+    .footer-main
+      .footer-item
+        h4 Our Awards
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptate aspernatur Odit accusamus possimus a? Nesciunt praesentium ea nobis cum.
+        p.footer-logo Travelicious
+      .footer-item.footer-contact
+        h4 Contact Info
+        p
+          ion-icon.footer-contact-icons(name='phone-portrait-outline')
+          | +1 (647) 561-4444
+        p
+          ion-icon.footer-contact-icons(name='location-outline')
+          | 123 King Street, Toronto, Ontario, L5W 1C9
+        p
+          ion-icon.footer-contact-icons(name='time-outline')
+          | Mon - Sat 8:00 am - 6:00 pm Sunday CLOSED
+        .social-icons
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/facebook.svg' alt='Facebook Icon')
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/twitter.svg' alt='Twitter Icon')
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/youtube.svg' alt='Youtube Icon')
+          .social-icons-item
+            a(href='# ')
+              img(src='icons/socialIcons/pinterest.svg' alt='Pinterest Icon')
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/instagram.svg' alt='Instagram Icon')
+      .footer-item
+        h4 Recent Trips
+        .footer-image-grid
+          div
+            img(src='images/footerGridImage1.jpg' alt='Toronto Image')
+          div
+            img(src='images/footerGridImage2.jpg' alt='Italy Image')
+          div
+            img(src='images/footerGridImage3.jpg' alt='London Image')
+          div
+            img(src='images/footerGridImage4.jpg' alt='Taj Mahal Image')
+          div
+            img(src='images/footerGridImage5.jpg' alt='Dubai Image')
+          div
+            img(src='images/footerGridImage6.jpg ' alt='Copenhagen Image ')
+  hr
+  .row
+    .footer-bottom
+      .footer-bottom-item
+        p.copyright Copyright &copy; 2021 All Rights Reserved
+      .footer-bottom-item
+        ul.footer-nav-links
+          li
+            a(href='# ') Home
+          li
+            a(href='# ') Blog
+          li
+            a(href='# ') About Us
+          li
+            a(href='# ') Contact Us
+    .footer-credits
+      p.made-by-text
+        | Made with 
+        i.ion-md-heart.heart-icon
+        |  in 
+        i.fab.fa-canadian-maple-leaf.maple-leaf-icon
+        |  Toronto, Canada by Harshit Behl &amp; Kulpreet Singh
+script(src='https://unpkg.com/ionicons@5.0.0/dist/ionicons.js')
+

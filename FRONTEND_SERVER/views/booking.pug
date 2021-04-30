@@ -1,0 +1,157 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/stylesheets/booking.css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet')
+  link(href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel='stylesheet' type='text/css' href='icons/fontIcons/homePackagesIcon/flaticon.css')
+  title Travelicious | Bookings
+header
+  nav.main-nav
+    .row.nav-wrapper
+      .logo-container
+        p.nav-logo Travelicious
+      .nav-links
+        li.nav-link
+          a(href='/') Home
+        li.nav-link
+          a(href='/booking') Booking
+        li.nav-link
+          a(href='#') Blog
+        li.nav-link
+          a(href='/about') About Us
+        li.nav-link
+          a(href='/login') Sign in
+main
+  .showcase
+    .showcase__icon-container
+      .showcase__icon(onclick='showStays()')
+        img.showcase__icon-logo(src='images/bookingImages/hotel.svg')
+        h3.showcase__icon-label.stays-icon Stays
+      .showcase__icon.flights-icon(onclick='showFlights()')
+        img.showcase__icon-logo(src='images/bookingImages/plane.svg')
+        h3.showcase__icon-label Flights
+      .showcase__icon.cars-icon(onclick='showCars()')
+        img.showcase__icon-logo(src='images/bookingImages/car.svg')
+        h3.showcase__icon-label Cars
+      .showcase__icon.packages-icon(onclick='showPackages()')
+        img.showcase__icon-logo(src='images/bookingImages/suitcases.svg')
+        h3.showcase__icon-label Packages
+      .showcase__icon.things-icon(onclick='showThings()')
+        img.showcase__icon-logo(src='images/bookingImages/signpost.svg')
+        h3.showcase__icon-label Things to do
+    .showcase__data-container
+      .stays
+        form(action='/hotels' method = 'POST')
+          .stays-form
+            input.stays__going_to(type='search' name='stays__going_to' placeholder='Going to')
+            .checkin
+              label(for='check-in') check-in
+              input(type='date' name='check-in')
+            .checkout
+              label(for='check-out') check-out
+              input(type='date' name='check-out')
+            .stays__travelers
+              label(for='travelers') travelers
+              input(type='number' name='travelers')
+          input.search-btn(type='submit' value='search')
+      .flights
+        .flights__selection
+          .flights__type
+            h4(onclick='flightReturn()') Return
+            h4(onclick='flightOneWay()') One-Way
+          .flights__traveler-type
+            .flights__travelers
+              label(for='travelers') Travelers
+              input(type='number' name='travelers')
+            .class
+              label(for='class') Class
+              select(name='class')
+                option(value='economy') Economy Class
+                option(value='premium-economy') Premium Economy Class
+                option(value='business') Business Class
+                option(value='first-class') First Class
+        form(action='/airport' method = 'POST')
+          .flights-form
+            input.flights__from(type='search' name='flights__from' placeholder='Leaving from')
+            input.flights__going-to(type='search' name='flights__going_to' placeholder='Going to')
+            .flights__departing
+              label(for='flights-departing') departing
+              input(type='date' name='flight-departing')
+            .flights__returning
+              label(for='flights-returning') returning
+              input(type='date' name='flight-returning')
+          input.search-btn(type='submit' value='search')
+      .cars
+        form(action='')
+          .cars-form
+            .cars-location
+              input.pickup(type='search' name='pickup' placeholder='Pick up')
+              input.drop-off(type='search' name='dropoff' placeholder='Drop Off')
+            .cars-datetime
+              .cars-datetime-input
+                label(for='pick-up-date') pick-up date
+                input(type='date' name='pick-up-date')
+              .cars-datetime-input
+                label(for='drop-off-date') drop-off date
+                input(type='date' name='drop-off-date')
+              .cars-datetime-input
+                label(for='pick-up-time') pick-up time
+                input(type='time' name='pick-up-time')
+              .cars-datetime-input
+                label(for='drop-off-time') drop-off time
+                input(type='time' name='drop-off-time')
+          input.search-btn(type='submit' value='search')
+      .packages
+        form(action='')
+          .packages-form
+            input.packages__from(type='search' name='packages__from' placeholder='Leaving from')
+            input.packages__going-to(type='search' name='packages__going-to' placeholder='Going to')
+            .packages__departing
+              label(for='packages-departing') departing
+              input(type='date' name='packages-departing')
+            .packages__returning
+              label(for='packages-returning') returning
+              input(type='date' name='packages-returning')
+          input.search-btn(type='submit' value='search')
+      .things
+        form(action='')
+          .things-form
+            input.things-location(type='search' name='things-location' placeholder='Things to do in')
+            .things__from
+              label(for='things-from') From
+              input(type='date' name='things-from')
+            .things__to
+              label(for='things-to') To
+              input(type='date' name='things-to')
+          input.search-btn(type='submit' value='search')
+// -------------------------------FOOTER SECTION-------------------------------
+footer
+  .row
+    .footer-bottom
+      .footer-bottom-item
+        p.copyright Copyright &copy; 2021 All Rights Reserved
+      .footer-bottom-item
+        ul.footer-nav-links
+          li
+            a(href='# ') Home
+          li
+            a(href='# ') Blog
+          li
+            a(href='# ') About Us
+          li
+            a(href='# ') Contact Us
+    .footer-credits
+      p.made-by-text
+        | Made with 
+        i.ion-md-heart.heart-icon
+        |  in 
+        i.fab.fa-canadian-maple-leaf.maple-leaf-icon
+        |  Toronto, Canada by Harshit Behl &amp; Kulpreet Singh
+script(src='/javascripts/booking.js')

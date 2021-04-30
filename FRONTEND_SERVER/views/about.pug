@@ -1,0 +1,121 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='stylesheets/about.css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet')
+  link(href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel='stylesheet' type='text/css' href='icons/fontIcons/homePackagesIcon/flaticon.css')
+  title About Us
+header
+  .header-overlay
+  nav.main-nav
+    .row.nav-wrapper
+      .logo-container
+        p.nav-logo Travelicious
+      input#hamburgerMenu(type='checkbox' name='hamburgerMenu')
+      label.hamburger-btn(for='hamburgerMenu')
+        ion-icon(name='reorder-three-outline')
+      .nav-links
+        li.nav-link
+          a(href='/') Home
+        li.nav-link
+          a(href='/booking') Bookings
+        li.nav-link
+          a(href='#') Blog
+        li.nav-link
+          a(href='/about') About Us
+        li.nav-link
+          a(href='/login') Sign in
+  .row
+    .showcase
+      .showcase-text-top
+        .text-lines
+        p Here at Travelicious
+        .text-lines
+      h1 About Us
+      p.showcase-paragraph
+        | Welcome to Travelicious, your number one source for all tours and travels. We&apos;re dedicated to giving you the very best of tour packages, with a focus on dependability, customer service and uniqueness.
+        br
+        | Travelicious, a tours and travellers company. We provide you with plethora of tours &amp; travel packages. Adventurous and exciting trips and a opportunity to explore the world. So book your trip now and get started for an experience of a lifetime.
+        br
+        |  We hope you enjoy our offers as much as we enjoy offering them to you. If you have any questions or comments, please don&apos;t hesitate to contact us.
+      a.showcase-btn(href='login.html') Get Started
+// -------------------------------FOOTER SECTION-------------------------------
+footer
+  .row
+    .footer-main
+      .footer-item
+        h4 Our Awards
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptate aspernatur Odit accusamus possimus a? Nesciunt praesentium ea nobis cum.
+        p.footer-logo Travelicious
+      .footer-item.footer-contact
+        h4 Contact Info
+        p
+          ion-icon.footer-contact-icons(name='phone-portrait-outline')
+          | +1 (647) 561-4444
+        p
+          ion-icon.footer-contact-icons(name='location-outline')
+          | 123 King Street, Toronto, Ontario, L5W 1C9
+        p
+          ion-icon.footer-contact-icons(name='time-outline')
+          | Mon - Sat 8:00 am - 6:00 pm Sunday CLOSED
+        .social-icons
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/facebook.svg' alt='Facebook Icon')
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/twitter.svg' alt='Twitter Icon')
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/youtube.svg' alt='Youtube Icon')
+          .social-icons-item
+            a(href='# ')
+              img(src='icons/socialIcons/pinterest.svg' alt='Pinterest Icon')
+          .social-icons-item
+            a(href='#')
+              img(src='icons/socialIcons/instagram.svg' alt='Instagram Icon')
+      .footer-item
+        h4 Recent Trips
+        .footer-image-grid
+          div
+            img(src='images/footerGridImage1.jpg' alt='Toronto Image')
+          div
+            img(src='images/footerGridImage2.jpg' alt='Italy Image')
+          div
+            img(src='images/footerGridImage3.jpg' alt='London Image')
+          div
+            img(src='images/footerGridImage4.jpg' alt='Taj Mahal Image')
+          div
+            img(src='images/footerGridImage5.jpg' alt='Dubai Image')
+          div
+            img(src='images/footerGridImage6.jpg ' alt='Copenhagen Image ')
+  hr
+  .row
+    .footer-bottom
+      .footer-bottom-item
+        p.copyright Copyright &copy; 2021 All Rights Reserved
+      .footer-bottom-item
+        ul.footer-nav-links
+          li
+            a(href='# ') Home
+          li
+            a(href='# ') Blog
+          li
+            a(href='# ') About Us
+          li
+            a(href='# ') Contact Us
+    .footer-credits
+      p.made-by-text
+        | Made with 
+        i.ion-md-heart.heart-icon
+        |  in 
+        i.fab.fa-canadian-maple-leaf.maple-leaf-icon
+        |  Toronto, Canada by Harshit Behl &amp; Kulpreet Singh
